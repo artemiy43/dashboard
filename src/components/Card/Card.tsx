@@ -1,5 +1,5 @@
 import { Task } from "../../store/taskStore";
-import { Statuses } from "../../store/taskStore";
+//import { Statuses } from "../../store/taskStore";
 import "./Card.css";
 import taskStore from "../../store/taskStore";
 export const Card = ({ el }: Task) => {

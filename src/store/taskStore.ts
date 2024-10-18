@@ -1,4 +1,4 @@
-import { makeAutoObservable, autorun } from "mobx";
+import { makeAutoObservable } from "mobx";
 
 export enum Statuses {
   ToDo = "Нужно сделать",
@@ -81,7 +81,7 @@ class UseTaskStore {
     );
   }
 
-  deleteTask(id) {
+  deleteTask(id: number) {
     this.tasks = this.tasks.filter((el) => el.id !== id);
   }
 
@@ -97,7 +97,7 @@ class UseTaskStore {
     console.log("next");
   }
 
-  changeStatusTask(task, flag) {
+  changeStatusTask(task: Task, flag: string) {
     const findedTask = this.tasks.find((el) => el.id === task.id);
     if (flag === "inc") {
       switch (findedTask!.status) {
