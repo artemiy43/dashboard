@@ -1,13 +1,13 @@
 export const linksFooter = [
   {
     id: 1,
-    icon: "/public/telegram.png",
+    icon: "/telegram.png",
     name: "Telegram",
     url: "https://t.me/Bond_bond_bond",
   },
   {
     id: 2,
-    icon: "/public/github.png",
+    icon: "/github.png",
     name: "Github",
     url: "https://github.com/artemiy43",
   },
