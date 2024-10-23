@@ -13,7 +13,7 @@ export const Form = ({ onSubmit, register, errors, currentCard }) => {
           className="w-full p-2 text-black border-solid border border-black border-opacity-50 rounded-lg"
           type="text"
           placeholder="Покушать"
-          {...register("name", { required: true, maxLength: 20 })}
+          {...register("name", { required: true })}
           //   value='{currentCard?.name || ""}'
         />
         {errors.name && (
@@ -62,7 +62,7 @@ export const Form = ({ onSubmit, register, errors, currentCard }) => {
         type="submit"
         className="justify-self-center seif-center bg-slate-200 px-4 dark:bg-inherit dark:border-white"
       >
-        Добавить задачу
+        {currentCard === null ? "Добавить задачу" : "Изменить задачу"}
       </button>
     </form>
   );
