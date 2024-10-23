@@ -89,6 +89,13 @@ class UseTaskStore {
     this.tasks.push(task);
   }
 
+  editTask(newTask: Task) {
+    const index = this.tasks.findIndex((el) => el.id === newTask.id);
+    // const pizzaExist =
+    //   this.tasks.find((item) => item?.id === newTask?.id) ?? -1;
+    this.tasks.splice(index, 1, newTask);
+  }
+
   pred() {
     console.log("pred");
   }
@@ -98,6 +105,7 @@ class UseTaskStore {
   }
 
   changeStatusTask(task: Task, flag: string) {
+    console.log("change status");
     const findedTask = this.tasks.find((el) => el.id === task.id);
     if (flag === "inc") {
       switch (findedTask!.status) {
@@ -121,6 +129,7 @@ class UseTaskStore {
           break;
         case "На ревью":
           findedTask!.status = Statuses.InProgress;
+          console.log("dec, to inprogress");
           break;
         case "В процессе":
           findedTask!.status = Statuses.ToDo;

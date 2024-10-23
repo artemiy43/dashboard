@@ -1,19 +1,19 @@
-.card_image {
-  background-image: url(../../assets/close1.png);
+.card_icon {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: inherit;
+}
+.card_close {
+  background-image: url(../../assets/close1.png);
+}
+.card_edit {
+  background-image: url(../../assets/edit.png);
 }
 .arrowLeft {
   background-image: url(../../assets/arrowLeft.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .arrowRight {
   background-image: url(../../assets/arrowRight.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
