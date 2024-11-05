@@ -3,8 +3,8 @@ import { Card } from "../Card/Card";
 import { observer } from "mobx-react";
 export const List = observer(({ flag, handleEditCard, currentCard }) => {
   return (
-    <div className="w-full flex flex-row justify-between items-start gap-3 bg-slate-200 p-1 box-border dark:bg-inherit dark:border overflow-x-auto md:p-5">
-      <div className="w-full flex flex-col justify-center items-center gap-5 min-w-80">
+    <div className="w-full flex flex-row justify-between items-start gap-3 bg-slate-200 p-3 box-border dark:bg-inherit dark:border overflow-x-auto md:p-5">
+      <div className="w-full flex flex-col justify-center items-center gap-5 min-w-72">
         <p className="text-2xl">Нужно сделать</p>
         {taskStore.todoTasks.map((el) => {
           return (
@@ -18,7 +18,7 @@ export const List = observer(({ flag, handleEditCard, currentCard }) => {
           );
         })}
       </div>
-      <div className="w-full flex flex-col justify-center items-center gap-5 m-5 min-w-80">
+      <div className="w-full flex flex-col justify-center items-center gap-5 min-w-72">
         <p className="text-2xl">В процессе</p>
         {taskStore.inProgressTasks.map((el) => {
           return (
@@ -32,7 +32,7 @@ export const List = observer(({ flag, handleEditCard, currentCard }) => {
           );
         })}
       </div>
-      <div className="w-full flex flex-col justify-center items-center gap-5 m-5 min-w-80">
+      <div className="w-full flex flex-col justify-center items-center gap-5 min-w-72">
         <p className="text-2xl">На ревью</p>
         {taskStore.onReviewTasks.map((el) => {
           return (
@@ -46,7 +46,7 @@ export const List = observer(({ flag, handleEditCard, currentCard }) => {
           );
         })}
       </div>
-      <div className="w-full flex flex-col justify-center items-center gap-5 m-5 min-w-80">
+      <div className="w-full flex flex-col justify-center items-center gap-5 min-w-72">
         <p className="text-2xl">Сделана</p>
         {taskStore.doneTasks.map((el) => {
           return (
