@@ -1,0 +1,9 @@
+progress::-moz-progress-bar {
+  background-color: rgb(255, 255, 255);
+  height: 25px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: rgb(255, 255, 255);
+  height: 25px;
+}

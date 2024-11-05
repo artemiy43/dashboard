@@ -5,8 +5,8 @@ import taskStore from "../../store/taskStore";
 export const Card = ({ el, flag, handleEditCard, currentCard }) => {
   return (
     <div
-      className={`w-full border rounded-md p-6 flex flex-col justify-center items-center ${
-        flag && currentCard.id === el.id ? "bg-orange-400" : "bg-slate-300"
+      className={`w-full border border-slate-900 rounded-md p-6 flex flex-col justify-center items-center ${
+        flag && currentCard.id === el.id ? "bg-orange-400" : "bg-inherit"
       }`}
     >
       <div className="w-full flex flex-row justify-between items-center p-2">

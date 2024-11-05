@@ -2,7 +2,7 @@ import { Statuses } from "../store/taskStore";
 export const Form = ({ onSubmit, register, errors, currentCard }) => {
   return (
     <form
-      className={`w-full p-8 flex flex-row justify-center items-center gap-3 ${
+      className={`w-full p-8 flex flex-col justify-center items-center gap-3 md:flex-row ${
         currentCard?.name ? "bg-orange-300" : "bg-inherit"
       }`}
       onSubmit={onSubmit}

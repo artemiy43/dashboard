@@ -1,5 +1,5 @@
 import "./App.css";
-import { Dashboard } from "./components/Dashboard";
+import { Dashboard } from "./components/Dashboard/Dashboard";
 import { MainLayout } from "./layouts/MainLayout";
 import { Sign } from "./components/Sign";
 import { Routes, Route } from "react-router-dom";

@@ -3,12 +3,25 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: inherit;
+  border: none;
+  transition: all 0.4s ease-in-out;
+}
+.card_icon:hover {
+  border: none;
+  transform: scale(1.1);
 }
 .card_close {
   background-image: url(../../assets/close1.png);
 }
+
+.card_close:hover {
+  transform: rotate(90deg);
+}
 .card_edit {
   background-image: url(../../assets/edit.png);
+}
+.card_edit:hover {
+  transform: rotate(360deg);
 }
 .arrowLeft {
   background-image: url(../../assets/arrowLeft.png);

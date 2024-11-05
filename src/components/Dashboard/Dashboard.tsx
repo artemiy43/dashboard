@@ -1,10 +1,11 @@
 import { useForm } from "react-hook-form";
-import taskStore from "../store/taskStore";
-import { Statuses } from "../store/taskStore";
-import { List } from "./List/List";
+import taskStore from "../../store/taskStore";
+import { Statuses } from "../../store/taskStore";
+import { List } from "../List/List";
 import { observer } from "mobx-react";
-import { Form } from "./Form";
+import { Form } from "../Form";
 import { useState } from "react";
+import "./Dasboard.css";
 type Inputs = {
   name: string;
   text: string;
@@ -62,7 +63,7 @@ export const Dashboard = observer(() => {
         <p>Общий прогресс: </p>
         <p>{taskStore.totalProgress} %</p>
         <progress
-          className="w-72 text-white"
+          className="w-72 progress"
           value={(taskStore.totalProgress / 100).toFixed(2)}
         />
       </div>

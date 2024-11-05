@@ -1,7 +1,7 @@
 import { linksFooter } from "../../utils/constants";
 export const Footer = () => {
   return (
-    <footer className="w-full p-5 border-t-2 border-black dark:border-white">
+    <footer className="w-full p-5">
       <ul className="flex list-none flex-row justify-center items-center gap-3">
         {linksFooter.map((el) => {
           return (
