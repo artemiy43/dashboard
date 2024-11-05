@@ -13,7 +13,6 @@ type Inputs = {
 };
 
 export const Sign = () => {
-  console.log("sign rendered");
   const navigate = useNavigate();
   const {
     register,
@@ -23,7 +22,6 @@ export const Sign = () => {
 
   const onSubmit = handleSubmit((data) => {
     UserStore.login(data);
-    console.log(UserStore);
     navigate("/dashboard", { replace: false });
   });
 
